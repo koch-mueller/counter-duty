@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Quelldateien\game">
+      <UniqueIdentifier>{3fff7e55-078d-406a-91f1-0874a248076e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\player">
+      <UniqueIdentifier>{bab9c106-35ed-414d-8301-b51a855bb41d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\scene">
+      <UniqueIdentifier>{72b010e2-0b36-4890-a7de-eb623b16a877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\collision">
+      <UniqueIdentifier>{2c36763b-d1ab-4e11-9e64-8ea2c52076aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\interaction">
+      <UniqueIdentifier>{490b61f2-72c3-492a-8342-9c11aa62032f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\rendering">
+      <UniqueIdentifier>{4da46834-df11-4ad6-826e-0f90a62bfcf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\shelves">
+      <UniqueIdentifier>{c7ccda78-972c-407d-ac8d-182359fca150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\products">
+      <UniqueIdentifier>{fb633c23-08ff-4ed2-a514-04f69d7bbe27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\orders">
+      <UniqueIdentifier>{ab081388-da0a-4b90-aba9-722c709561da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\carry">
+      <UniqueIdentifier>{a7efa91f-1f5a-46e2-9052-55988dc06d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\physics">
+      <UniqueIdentifier>{29395929-30f2-4db5-bf27-94a094a72fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\external">
+      <UniqueIdentifier>{e3d0df78-f665-4ef5-86a0-24f19d61bfa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\external\miniaudio">
+      <UniqueIdentifier>{3b7c675f-4f7f-408a-a72d-f2e203241447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\audio">
+      <UniqueIdentifier>{f9f40ebe-4751-43bb-a588-016c9beefe7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\app">
+      <UniqueIdentifier>{48e550ae-53c9-4d2a-abd1-28a4f6e823ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\assets">
+      <UniqueIdentifier>{87a00c68-a942-43b6-846d-4324ae8827bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\engine">
+      <UniqueIdentifier>{b9aa7372-7111-45a9-8c83-f17e60319091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\scanner">
+      <UniqueIdentifier>{212ce8ce-38e5-4d3f-a466-1a5cd5016d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\debug">
+      <UniqueIdentifier>{2307587c-31e9-46e9-a5ba-730407a7a1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\delivery">
+      <UniqueIdentifier>{5e1c00b1-1957-47b4-bd0f-ace50def1463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\ui">
+      <UniqueIdentifier>{ac9194be-8776-46d2-8b15-5862ede01b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\cleaning">
+      <UniqueIdentifier>{d53ccd18-edee-445e-8bb9-e70b67fe8b34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\game\scene\StoreScene.cpp">
+      <Filter>Quelldateien\game\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\player\FirstPersonCamera.cpp">
+      <Filter>Quelldateien\game\player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\collision\PlayerCollision.cpp">
+      <Filter>Quelldateien\game\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\player\PlayerController.cpp">
+      <Filter>Quelldateien\game\player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\collision\Raycast.cpp">
+      <Filter>Quelldateien\game\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\interaction\InteractionSystem.cpp">
+      <Filter>Quelldateien\game\interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\rendering\HighlightRenderer.cpp">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\rendering\HUDRenderer.cpp">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\rendering\BitmapFontRenderer.cpp">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\shelves\ShelfSlot.cpp">
+      <Filter>Quelldateien\game\shelves</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\shelves\ShelfProductRow.cpp">
+      <Filter>Quelldateien\game\shelves</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\shelves\Shelf.cpp">
+      <Filter>Quelldateien\game\shelves</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\products\Product.cpp">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\products\ProductDefinition.cpp">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\orders\OrderManager.cpp">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\orders\Orders.cpp">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\orders\OrderTerminal.cpp">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\carry\CarrySystem.cpp">
+      <Filter>Quelldateien\game\carry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\physics\PhysicsSystem.cpp">
+      <Filter>Quelldateien\game\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\physics\ReactPhysicsWorld.cpp">
+      <Filter>Quelldateien\game\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\external\miniaudio\miniaudio.c">
+      <Filter>Quelldateien\external\miniaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\scanner\Scanner.cpp">
+      <Filter>Quelldateien\game\scanner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\audio\AudioPlayer.cpp">
+      <Filter>Quelldateien\game\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBox.cpp">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBoxInteraction.cpp">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBoxGeometry.cpp">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\delivery\DeliveryZone.cpp">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Aabb.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\BaseModel.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\BaseShader.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Camera.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\color.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\ConstantShader.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Framebuffer.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\IndexBuffer.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Lights.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\LineBoxModel.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Matrix.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Model.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\PhongShader.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\rgbimage.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\ShaderLightMapper.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\ShadowMapGenerator.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Texture.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\TriangleBoxModel.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\vector.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\VertexBuffer.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\app\main.cpp">
+      <Filter>Quelldateien\app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\app\Application.cpp">
+      <Filter>Quelldateien\app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\assets\AssetLoader.cpp">
+      <Filter>Quelldateien\assets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\scene\StoreEnvironmentBuilder.cpp">
+      <Filter>Quelldateien\game\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\shelves\ShelfSystem.cpp">
+      <Filter>Quelldateien\game\shelves</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\scanner\ScannerStation.cpp">
+      <Filter>Quelldateien\game\scanner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\scanner\ScannerController.cpp">
+      <Filter>Quelldateien\game\scanner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\rendering\ProductVisualSystem.cpp">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\products\ProductFactory.cpp">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\products\ProductCollection.cpp">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\products\ProductCatalog.cpp">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\orders\OrderPackingEvaluator.cpp">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\orders\OrderCatalog.cpp">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\debug\LineCylinderModel.cpp">
+      <Filter>Quelldateien\game\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\debug\DebugRenderer.cpp">
+      <Filter>Quelldateien\game\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\interaction\InteractionController.cpp">
+      <Filter>Quelldateien\game\interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\delivery\DeliveryController.cpp">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBoxScene.cpp">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBoxPhysicsController.cpp">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\collision\ConvexBoxCollision.cpp">
+      <Filter>Quelldateien\game\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\scene\StoreLayout.cpp">
+      <Filter>Quelldateien\game\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\TexturedPlaneModel.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\assets\PhongMaterial.cpp">
+      <Filter>Quelldateien\assets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\cleaning\CleaningTool.cpp">
+      <Filter>Quelldateien\game\cleaning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\cleaning\Spill.cpp">
+      <Filter>Quelldateien\game\cleaning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\rendering\OutlineShader.cpp">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\ui\TerminalUI.cpp">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\ui\ToastManager.cpp">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\ui\MainMenu.cpp">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\ui\HUDModel.cpp">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\ui\GameIntro.cpp">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\ui\PauseMenu.cpp">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\cleaning\CleaningSystem.cpp">
+      <Filter>Quelldateien\game\cleaning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\rendering\MenuRenderer.cpp">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\game\scene\StoreScene.h">
+      <Filter>Quelldateien\game\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\player\FirstPersonCamera.h">
+      <Filter>Quelldateien\game\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\player\PlayerController.h">
+      <Filter>Quelldateien\game\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\collision\PlayerCollision.h">
+      <Filter>Quelldateien\game\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\collision\Ray.h">
+      <Filter>Quelldateien\game\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\collision\Raycast.h">
+      <Filter>Quelldateien\game\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\interaction\IInteractable.h">
+      <Filter>Quelldateien\game\interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\interaction\InteractionSystem.h">
+      <Filter>Quelldateien\game\interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\rendering\HighlightRenderer.h">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\rendering\HUDRenderer.h">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\rendering\BitmapFontRenderer.h">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\shelves\ShelfSlot.h">
+      <Filter>Quelldateien\game\shelves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\shelves\ShelfProductRow.h">
+      <Filter>Quelldateien\game\shelves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\shelves\Shelf.h">
+      <Filter>Quelldateien\game\shelves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\products\ProductState.h">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\products\ProductDefinition.h">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\products\Product.h">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\orders\OrderManager.h">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\orders\Orders.h">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\orders\OrderTerminal.h">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\carry\ICarryable.h">
+      <Filter>Quelldateien\game\carry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\carry\CarrySystem.h">
+      <Filter>Quelldateien\game\carry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\physics\IPhysicsWorld.h">
+      <Filter>Quelldateien\game\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\physics\PhysicsSystem.h">
+      <Filter>Quelldateien\game\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\physics\ReactPhysicsWorld.h">
+      <Filter>Quelldateien\game\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\external\miniaudio\miniaudio.h">
+      <Filter>Quelldateien\external\miniaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\scanner\ScannerVisualState.h">
+      <Filter>Quelldateien\game\scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\scanner\Scanner.h">
+      <Filter>Quelldateien\game\scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\scanner\ScanResult.h">
+      <Filter>Quelldateien\game\scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\audio\AudioPlayer.h">
+      <Filter>Quelldateien\game\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBox.h">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBoxGeometry.h">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBoxInteraction.h">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\delivery\DeliveryZone.h">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Aabb.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\BaseModel.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\BaseShader.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Camera.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\color.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\ConstantShader.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Framebuffer.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\IndexBuffer.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Lights.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\LineBoxModel.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Matrix.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Model.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\PhongShader.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\rgbimage.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\ShaderLightMapper.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\ShadowMapGenerator.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Texture.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\TriangleBoxModel.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\vector.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\VertexBuffer.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\app\Application.h">
+      <Filter>Quelldateien\app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\assets\AssetLoader.h">
+      <Filter>Quelldateien\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\scene\StoreEnvironmentBuilder.h">
+      <Filter>Quelldateien\game\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\shelves\ShelfSystem.h">
+      <Filter>Quelldateien\game\shelves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\scanner\ScannerStation.h">
+      <Filter>Quelldateien\game\scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\scanner\ScannerController.h">
+      <Filter>Quelldateien\game\scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\rendering\ProductVisualSystem.h">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\products\ProductFactory.h">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\products\ProductCollection.h">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\products\ProductCatalog.h">
+      <Filter>Quelldateien\game\products</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\orders\OrderPackingResult.h">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\orders\OrderPackingEvaluator.h">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\orders\OrderCatalog.h">
+      <Filter>Quelldateien\game\orders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\debug\LineCylinderModel.h">
+      <Filter>Quelldateien\game\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\debug\DebugRenderer.h">
+      <Filter>Quelldateien\game\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\interaction\InteractionController.h">
+      <Filter>Quelldateien\game\interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\delivery\DeliveryController.h">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBoxScene.h">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBoxPhysicsController.h">
+      <Filter>Quelldateien\game\delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\collision\ConvexBoxCollision.h">
+      <Filter>Quelldateien\game\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\scene\StoreLayout.h">
+      <Filter>Quelldateien\game\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\TexturedPlaneModel.h">
+      <Filter>Quelldateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\assets\PhongMaterial.h">
+      <Filter>Quelldateien\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\cleaning\CleaningTool.h">
+      <Filter>Quelldateien\game\cleaning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\cleaning\Spill.h">
+      <Filter>Quelldateien\game\cleaning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\rendering\OutlineShader.h">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\ui\TerminalUI.h">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\ui\ToastManager.h">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\ui\MainMenu.h">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\ui\HUDModel.h">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\ui\GameState.h">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\ui\GameIntro.h">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\cleaning\CleaningSystem.h">
+      <Filter>Quelldateien\game\cleaning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\rendering\MenuRenderer.h">
+      <Filter>Quelldateien\game\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\ui\PauseMenu.h">
+      <Filter>Quelldateien\game\ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vcpkg.json" />
+  </ItemGroup>
+</Project>

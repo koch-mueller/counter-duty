@@ -1,0 +1,11 @@
+# Counter Duty Phong-ready material definitions
+
+newmtl Product_mustard
+Ka 0.070000 0.070000 0.070000
+Kd 1.000000 1.000000 1.000000
+Ks 0.116664 0.116664 0.116664
+Ns 77.672230
+d 1.000000
+illum 2
+map_Kd mustard_diffuse.png
+map_Bump mustard_diffuse_n.png

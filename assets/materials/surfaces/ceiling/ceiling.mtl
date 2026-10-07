@@ -1,0 +1,9 @@
+newmtl Ceiling
+Ka 0.080000 0.080000 0.080000
+Kd 1.000000 1.000000 1.000000
+Ks 0.074253 0.074253 0.074253
+Ns 11.181649
+d 1.000000
+illum 2
+map_Kd ceiling_diffuse.jpg
+map_Bump ceiling_diffuse_n.png

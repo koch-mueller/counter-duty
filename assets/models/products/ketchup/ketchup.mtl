@@ -1,0 +1,11 @@
+# Counter Duty Phong-ready material definitions
+
+newmtl Product_ketchup
+Ka 0.070000 0.070000 0.070000
+Kd 1.000000 1.000000 1.000000
+Ks 0.155131 0.155131 0.155131
+Ns 90.966221
+d 1.000000
+illum 2
+map_Kd ketchup_diffuse.png
+map_Bump ketchup_diffuse_n.png

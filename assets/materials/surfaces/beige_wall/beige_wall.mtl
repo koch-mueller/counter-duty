@@ -1,0 +1,9 @@
+newmtl BeigeWall
+Ka 0.080000 0.080000 0.080000
+Kd 1.000000 1.000000 1.000000
+Ks 0.085304 0.085304 0.085304
+Ns 21.793226
+d 1.000000
+illum 2
+map_Kd beige_wall_diffuse.jpg
+map_Bump beige_wall_diffuse_n.png

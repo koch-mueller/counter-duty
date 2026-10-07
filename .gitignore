@@ -1,0 +1,35 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+out/
+build/
+vcpkg_installed/
+
+# Optional local-only assets whose licenses do not permit redistribution
+assets/local/
+
+# Compiler and linker artifacts
+*.idb
+*.ilk
+*.ipch
+*.pdb
+*.tlog
+*.lastbuildstate
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini

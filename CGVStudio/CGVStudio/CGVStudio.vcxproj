@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{428A6CFB-2BA1-4AD9-815A-44792ED54931}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CGVStudio</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\app\Application.cpp" />
+    <ClCompile Include="..\..\src\app\main.cpp" />
+    <ClCompile Include="..\..\src\assets\AssetLoader.cpp" />
+    <ClCompile Include="..\..\src\assets\PhongMaterial.cpp" />
+    <ClCompile Include="..\..\src\engine\Aabb.cpp" />
+    <ClCompile Include="..\..\src\engine\BaseModel.cpp" />
+    <ClCompile Include="..\..\src\engine\BaseShader.cpp" />
+    <ClCompile Include="..\..\src\engine\Camera.cpp" />
+    <ClCompile Include="..\..\src\engine\color.cpp" />
+    <ClCompile Include="..\..\src\engine\ConstantShader.cpp" />
+    <ClCompile Include="..\..\src\engine\Framebuffer.cpp" />
+    <ClCompile Include="..\..\src\engine\IndexBuffer.cpp" />
+    <ClCompile Include="..\..\src\engine\Lights.cpp" />
+    <ClCompile Include="..\..\src\engine\LineBoxModel.cpp" />
+    <ClCompile Include="..\..\src\engine\Matrix.cpp" />
+    <ClCompile Include="..\..\src\engine\Model.cpp" />
+    <ClCompile Include="..\..\src\engine\PhongShader.cpp" />
+    <ClCompile Include="..\..\src\engine\rgbimage.cpp" />
+    <ClCompile Include="..\..\src\engine\ShaderLightMapper.cpp" />
+    <ClCompile Include="..\..\src\engine\ShadowMapGenerator.cpp" />
+    <ClCompile Include="..\..\src\engine\Texture.cpp" />
+    <ClCompile Include="..\..\src\engine\TexturedPlaneModel.cpp" />
+    <ClCompile Include="..\..\src\engine\TriangleBoxModel.cpp" />
+    <ClCompile Include="..\..\src\engine\vector.cpp" />
+    <ClCompile Include="..\..\src\engine\VertexBuffer.cpp" />
+    <ClCompile Include="..\..\src\external\miniaudio\miniaudio.c" />
+    <ClCompile Include="..\..\src\game\audio\AudioPlayer.cpp" />
+    <ClCompile Include="..\..\src\game\carry\CarrySystem.cpp" />
+    <ClCompile Include="..\..\src\game\cleaning\CleaningSystem.cpp" />
+    <ClCompile Include="..\..\src\game\cleaning\CleaningTool.cpp" />
+    <ClCompile Include="..\..\src\game\cleaning\Spill.cpp" />
+    <ClCompile Include="..\..\src\game\collision\ConvexBoxCollision.cpp" />
+    <ClCompile Include="..\..\src\game\collision\PlayerCollision.cpp" />
+    <ClCompile Include="..\..\src\game\collision\Raycast.cpp" />
+    <ClCompile Include="..\..\src\game\debug\DebugRenderer.cpp" />
+    <ClCompile Include="..\..\src\game\debug\LineCylinderModel.cpp" />
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBox.cpp" />
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBoxGeometry.cpp" />
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBoxInteraction.cpp" />
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBoxPhysicsController.cpp" />
+    <ClCompile Include="..\..\src\game\delivery\DeliveryBoxScene.cpp" />
+    <ClCompile Include="..\..\src\game\delivery\DeliveryController.cpp" />
+    <ClCompile Include="..\..\src\game\delivery\DeliveryZone.cpp" />
+    <ClCompile Include="..\..\src\game\interaction\InteractionController.cpp" />
+    <ClCompile Include="..\..\src\game\interaction\InteractionSystem.cpp" />
+    <ClCompile Include="..\..\src\game\orders\OrderCatalog.cpp" />
+    <ClCompile Include="..\..\src\game\orders\OrderManager.cpp" />
+    <ClCompile Include="..\..\src\game\orders\OrderPackingEvaluator.cpp" />
+    <ClCompile Include="..\..\src\game\orders\Orders.cpp" />
+    <ClCompile Include="..\..\src\game\orders\OrderTerminal.cpp" />
+    <ClCompile Include="..\..\src\game\physics\PhysicsSystem.cpp" />
+    <ClCompile Include="..\..\src\game\physics\ReactPhysicsWorld.cpp" />
+    <ClCompile Include="..\..\src\game\player\FirstPersonCamera.cpp" />
+    <ClCompile Include="..\..\src\game\player\PlayerController.cpp" />
+    <ClCompile Include="..\..\src\game\products\Product.cpp" />
+    <ClCompile Include="..\..\src\game\products\ProductCatalog.cpp" />
+    <ClCompile Include="..\..\src\game\products\ProductCollection.cpp" />
+    <ClCompile Include="..\..\src\game\products\ProductDefinition.cpp" />
+    <ClCompile Include="..\..\src\game\products\ProductFactory.cpp" />
+    <ClCompile Include="..\..\src\game\rendering\BitmapFontRenderer.cpp" />
+    <ClCompile Include="..\..\src\game\rendering\HighlightRenderer.cpp" />
+    <ClCompile Include="..\..\src\game\rendering\HUDRenderer.cpp" />
+    <ClCompile Include="..\..\src\game\rendering\MenuRenderer.cpp" />
+    <ClCompile Include="..\..\src\game\rendering\OutlineShader.cpp" />
+    <ClCompile Include="..\..\src\game\rendering\ProductVisualSystem.cpp" />
+    <ClCompile Include="..\..\src\game\scanner\Scanner.cpp" />
+    <ClCompile Include="..\..\src\game\scanner\ScannerController.cpp" />
+    <ClCompile Include="..\..\src\game\scanner\ScannerStation.cpp" />
+    <ClCompile Include="..\..\src\game\scene\StoreEnvironmentBuilder.cpp" />
+    <ClCompile Include="..\..\src\game\scene\StoreLayout.cpp" />
+    <ClCompile Include="..\..\src\game\scene\StoreScene.cpp" />
+    <ClCompile Include="..\..\src\game\shelves\Shelf.cpp" />
+    <ClCompile Include="..\..\src\game\shelves\ShelfProductRow.cpp" />
+    <ClCompile Include="..\..\src\game\shelves\ShelfSlot.cpp" />
+    <ClCompile Include="..\..\src\game\shelves\ShelfSystem.cpp" />
+    <ClCompile Include="..\..\src\game\ui\GameIntro.cpp" />
+    <ClCompile Include="..\..\src\game\ui\HUDModel.cpp" />
+    <ClCompile Include="..\..\src\game\ui\MainMenu.cpp" />
+    <ClCompile Include="..\..\src\game\ui\PauseMenu.cpp" />
+    <ClCompile Include="..\..\src\game\ui\TerminalUI.cpp" />
+    <ClCompile Include="..\..\src\game\ui\ToastManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\app\Application.h" />
+    <ClInclude Include="..\..\src\assets\AssetLoader.h" />
+    <ClInclude Include="..\..\src\assets\PhongMaterial.h" />
+    <ClInclude Include="..\..\src\engine\Aabb.h" />
+    <ClInclude Include="..\..\src\engine\BaseModel.h" />
+    <ClInclude Include="..\..\src\engine\BaseShader.h" />
+    <ClInclude Include="..\..\src\engine\Camera.h" />
+    <ClInclude Include="..\..\src\engine\color.h" />
+    <ClInclude Include="..\..\src\engine\ConstantShader.h" />
+    <ClInclude Include="..\..\src\engine\Framebuffer.h" />
+    <ClInclude Include="..\..\src\engine\IndexBuffer.h" />
+    <ClInclude Include="..\..\src\engine\Lights.h" />
+    <ClInclude Include="..\..\src\engine\LineBoxModel.h" />
+    <ClInclude Include="..\..\src\engine\Matrix.h" />
+    <ClInclude Include="..\..\src\engine\Model.h" />
+    <ClInclude Include="..\..\src\engine\PhongShader.h" />
+    <ClInclude Include="..\..\src\engine\rgbimage.h" />
+    <ClInclude Include="..\..\src\engine\ShaderLightMapper.h" />
+    <ClInclude Include="..\..\src\engine\ShadowMapGenerator.h" />
+    <ClInclude Include="..\..\src\engine\Texture.h" />
+    <ClInclude Include="..\..\src\engine\TexturedPlaneModel.h" />
+    <ClInclude Include="..\..\src\engine\TriangleBoxModel.h" />
+    <ClInclude Include="..\..\src\engine\vector.h" />
+    <ClInclude Include="..\..\src\engine\VertexBuffer.h" />
+    <ClInclude Include="..\..\src\external\miniaudio\miniaudio.h" />
+    <ClInclude Include="..\..\src\game\audio\AudioPlayer.h" />
+    <ClInclude Include="..\..\src\game\carry\ICarryable.h" />
+    <ClInclude Include="..\..\src\game\carry\CarrySystem.h" />
+    <ClInclude Include="..\..\src\game\cleaning\CleaningSystem.h" />
+    <ClInclude Include="..\..\src\game\cleaning\CleaningTool.h" />
+    <ClInclude Include="..\..\src\game\cleaning\Spill.h" />
+    <ClInclude Include="..\..\src\game\collision\ConvexBoxCollision.h" />
+    <ClInclude Include="..\..\src\game\collision\PlayerCollision.h" />
+    <ClInclude Include="..\..\src\game\collision\Ray.h" />
+    <ClInclude Include="..\..\src\game\collision\Raycast.h" />
+    <ClInclude Include="..\..\src\game\debug\DebugRenderer.h" />
+    <ClInclude Include="..\..\src\game\debug\LineCylinderModel.h" />
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBox.h" />
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBoxGeometry.h" />
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBoxInteraction.h" />
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBoxPhysicsController.h" />
+    <ClInclude Include="..\..\src\game\delivery\DeliveryBoxScene.h" />
+    <ClInclude Include="..\..\src\game\delivery\DeliveryController.h" />
+    <ClInclude Include="..\..\src\game\delivery\DeliveryZone.h" />
+    <ClInclude Include="..\..\src\game\interaction\IInteractable.h" />
+    <ClInclude Include="..\..\src\game\interaction\InteractionController.h" />
+    <ClInclude Include="..\..\src\game\interaction\InteractionSystem.h" />
+    <ClInclude Include="..\..\src\game\orders\OrderCatalog.h" />
+    <ClInclude Include="..\..\src\game\orders\OrderManager.h" />
+    <ClInclude Include="..\..\src\game\orders\OrderPackingEvaluator.h" />
+    <ClInclude Include="..\..\src\game\orders\OrderPackingResult.h" />
+    <ClInclude Include="..\..\src\game\orders\Orders.h" />
+    <ClInclude Include="..\..\src\game\orders\OrderTerminal.h" />
+    <ClInclude Include="..\..\src\game\physics\IPhysicsWorld.h" />
+    <ClInclude Include="..\..\src\game\physics\PhysicsSystem.h" />
+    <ClInclude Include="..\..\src\game\physics\ReactPhysicsWorld.h" />
+    <ClInclude Include="..\..\src\game\player\FirstPersonCamera.h" />
+    <ClInclude Include="..\..\src\game\player\PlayerController.h" />
+    <ClInclude Include="..\..\src\game\products\Product.h" />
+    <ClInclude Include="..\..\src\game\products\ProductCatalog.h" />
+    <ClInclude Include="..\..\src\game\products\ProductCollection.h" />
+    <ClInclude Include="..\..\src\game\products\ProductDefinition.h" />
+    <ClInclude Include="..\..\src\game\products\ProductFactory.h" />
+    <ClInclude Include="..\..\src\game\products\ProductState.h" />
+    <ClInclude Include="..\..\src\game\rendering\BitmapFontRenderer.h" />
+    <ClInclude Include="..\..\src\game\rendering\HighlightRenderer.h" />
+    <ClInclude Include="..\..\src\game\rendering\HUDRenderer.h" />
+    <ClInclude Include="..\..\src\game\rendering\MenuRenderer.h" />
+    <ClInclude Include="..\..\src\game\rendering\OutlineShader.h" />
+    <ClInclude Include="..\..\src\game\rendering\ProductVisualSystem.h" />
+    <ClInclude Include="..\..\src\game\scanner\Scanner.h" />
+    <ClInclude Include="..\..\src\game\scanner\ScannerController.h" />
+    <ClInclude Include="..\..\src\game\scanner\ScannerStation.h" />
+    <ClInclude Include="..\..\src\game\scanner\ScannerVisualState.h" />
+    <ClInclude Include="..\..\src\game\scanner\ScanResult.h" />
+    <ClInclude Include="..\..\src\game\scene\StoreEnvironmentBuilder.h" />
+    <ClInclude Include="..\..\src\game\scene\StoreLayout.h" />
+    <ClInclude Include="..\..\src\game\scene\StoreScene.h" />
+    <ClInclude Include="..\..\src\game\shelves\Shelf.h" />
+    <ClInclude Include="..\..\src\game\shelves\ShelfProductRow.h" />
+    <ClInclude Include="..\..\src\game\shelves\ShelfSlot.h" />
+    <ClInclude Include="..\..\src\game\shelves\ShelfSystem.h" />
+    <ClInclude Include="..\..\src\game\ui\GameIntro.h" />
+    <ClInclude Include="..\..\src\game\ui\GameState.h" />
+    <ClInclude Include="..\..\src\game\ui\HUDModel.h" />
+    <ClInclude Include="..\..\src\game\ui\MainMenu.h" />
+    <ClInclude Include="..\..\src\game\ui\PauseMenu.h" />
+    <ClInclude Include="..\..\src\game\ui\TerminalUI.h" />
+    <ClInclude Include="..\..\src\game\ui\ToastManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vcpkg.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

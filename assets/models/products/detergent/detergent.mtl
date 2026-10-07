@@ -1,0 +1,11 @@
+# Counter Duty Phong-ready material definitions
+
+newmtl Product_detergent
+Ka 0.070000 0.070000 0.070000
+Kd 1.000000 1.000000 1.000000
+Ks 0.103000 0.103000 0.103000
+Ns 48.639999
+d 1.000000
+illum 2
+map_Kd detergent_diffuse.png
+map_Bump detergent_diffuse_n.png
